@@ -24,7 +24,7 @@ public class Application {
         System.out.println("4. Let Pets Sleep.");
         System.out.println("5. Give a Robotic Pet Oil.");
         System.out.println("6. Walk a Pet.");
-        System.out.println("7. Clean the Cage of a Pet");
+        System.out.println("7. Clean the Cage of a Natural Pet");
         System.out.println("8. Adopt a Pet.");
         System.out.println("9. Admit a Pet.");
         int myResponse = input.nextInt();
@@ -80,7 +80,7 @@ public class Application {
         System.out.println("Enter the name of the pet or enter all to feed all natural pets: ");
         String myResponse = input.nextLine();
         if (myResponse.toLowerCase() == "all") {
-            System.out.println("You chose to feed all the animals.");
+            System.out.println("You chose to feed all the natural animals.");
             petShelter.feedPet();
         } else {
             petShelter.feedPet(myResponse);
@@ -90,10 +90,10 @@ public class Application {
     public static void waterAnimals() {
         System.out.println("You chose to give the natural pets water. Which pet would you like to give the water to?");
         petShelter.naturalPetNames();
-        System.out.println("Enter the name of the pet or enter all to give all pets water: ");
+        System.out.println("Enter the name of the pet or enter all to give all natural pets water: ");
         String myResponse = input.nextLine();
         if (myResponse.toLowerCase() == "all") {
-            System.out.println("You chose to give all the animals water.");
+            System.out.println("You chose to give all the natural animals water.");
             petShelter.waterPet();
         } else {
             petShelter.waterPet(myResponse);
@@ -133,7 +133,7 @@ public class Application {
     public static void cleanAnimals() {
         System.out.println("You chose to clean the cage of the natural pets.  Which pet cage would you like to clean?");
         petShelter.naturalPetNames();
-        System.out.println("Enter the name of the pet or enter all to clean the cage of all pets: ");
+        System.out.println("Enter the name of the pet or enter all to clean the cage of all natural pets: ");
         String myResponse = input.nextLine();
         if (myResponse.toLowerCase() == "all") {
             System.out.println("You chose to clean the cage of all the natural animals.");
