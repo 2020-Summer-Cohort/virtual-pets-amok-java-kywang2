@@ -4,6 +4,15 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
 
+// -Overall, this was a very strong project. I particularly appreciated the overloading of methods in your shelter class
+// to differentiate between interacting with all pets vs. just one. There are just two points we would like you to touch up
+
+// -While you were correct in working on the application instead of getting stopped by testing, we want you to write tests to cover
+// this application, in particular the methods in your VirtualPetShelter class. If you are confused about how to go about doing so,
+// ask your instructors or a classmate to point you in the right direction
+
+// -Your VirtualPet class hierarchy could be cleaned up
+
 public class Application {
     static VirtualPetShelter petShelter = new VirtualPetShelter();
     static Scanner input = new Scanner(System.in);
